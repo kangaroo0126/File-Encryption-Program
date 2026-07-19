@@ -1,0 +1,13 @@
+# 萬用加密工具 - 所需套件清單
+# 安裝方式：在終端機 / 命令提示字元輸入
+#   pip install -r requirements.txt
+
+# ---- 必要套件（缺少會導致對應功能無法使用）----
+customtkinter>=5.2.0  # 現代化圖形介面元件庫（整個視覺介面都靠它）
+pypdf>=4.0.0          # PDF 加密
+cryptography>=42.0.0  # PDF AES-256 加密所需
+pyzipper>=0.3.6       # 通用高強度加密（AES-256 ZIP），支援任何檔案類型
+pillow>=10.0.0        # 圖片處理、圖片轉PDF功能
+
+# ---- 選用套件（非必要，缺少不影響主要功能）----
+# pywin32>=306        # 若要用 Word/Excel/PowerPoint「原生加密」，僅限 Windows + 已安裝正版Office
